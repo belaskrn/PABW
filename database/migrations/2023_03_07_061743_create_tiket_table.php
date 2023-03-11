@@ -12,7 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tiket', function (Blueprint $table) {
-            $table->id();
+            $table->id('booking_code');
+            $table->string('nama');
+            $table->string('flight_number');
+            $table->string('departure');
+            $table->string('arrival');
+            $table->string('departure_info');
+            $table->string('arrival_info');
+            $table->string('class');
+            $table->string('harga');
+            $table->string('status');
             $table->timestamps();
         });
     }

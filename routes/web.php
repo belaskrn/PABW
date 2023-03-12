@@ -17,6 +17,7 @@ Route::get('/', function () {
 });
 
 
+
 Route::get('/profileuser',function () {
     return view('profileuser');
 });
@@ -32,4 +33,3 @@ Route::get('/login',function () {
 Route::get('/profileuser',function () {
     return view('profileuser');
 });
-

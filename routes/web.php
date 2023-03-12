@@ -15,6 +15,7 @@ use app\Http\Controllers\CustomAuthController;
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 
 Route::get('/pencitraan',function () {
     return view('pencitraan');
@@ -28,3 +29,11 @@ Route::get('/login', 'App\Http\Controllers\CustomAuthController@login');
 Route::get('/registration', 'App\Http\Controllers\CustomAuthController@registration');
 
 Route::post('/register-user','App\Http\Controllers\CustomAuthController@registerUser') -> name('register-user');
+=======
+Route::get('/login',function () {
+    return view('login');
+});
+Route::get('/profileuser',function () {
+    return view('profileuser');
+});
+>>>>>>> eb5c1ea9689d1a7e7be81a4dcbacb6ee661eab35

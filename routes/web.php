@@ -14,8 +14,6 @@ use app\Http\Controllers\CustomAuthController;
 */
 Route::get('/', function () {
     return view('welcome');
-});
-<<<<<<< HEAD
 
 Route::get('/pencitraan',function () {
     return view('pencitraan');
@@ -36,7 +34,3 @@ Route::get('/login',function () {
 Route::get('/profileuser',function () {
     return view('profileuser');
 });
-<<<<<<< HEAD
->>>>>>> eb5c1ea9689d1a7e7be81a4dcbacb6ee661eab35
-=======
->>>>>>> eb5c1ea9689d1a7e7be81a4dcbacb6ee661eab35

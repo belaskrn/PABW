@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use app\Http\Controllers\CustomAuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,10 +12,16 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/login',function () {
-    return view('login');
+
+Route::get('/pencitraan',function () {
+    return view('pencitraan');
 });
+
+
+Route::get('/login', 'App\Http\Controllers\CustomAuthController@login');
+Route::get('/registration', 'App\Http\Controllers\CustomAuthController@registration');
+
+Route::post('/register-user','App\Http\Controllers\CustomAuthController@registerUser') -> name('register-user');

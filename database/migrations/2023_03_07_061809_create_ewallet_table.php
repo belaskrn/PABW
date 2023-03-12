@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('ewallet', function (Blueprint $table) {
             $table->id();
+            $table->string("username");
+            $table->integer("saldo");
+            $table->integer("pin");
             $table->timestamps();
         });
     }

@@ -17,8 +17,6 @@ return new class extends Migration
             $table->string('nama_hotel');
             $table->string('tipe_kamar');
             $table->string('status');
-            $table->timestamps('check_in') -> nullable();
-            $table->timestamps('check_out') -> nullable();
             $table->timestamps();
         });
     }

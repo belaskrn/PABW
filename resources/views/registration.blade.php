@@ -20,7 +20,6 @@
        <input type="email" name="email" required placeholder="Masukkan email">
        <input type="password" name="password" required placeholder="Masukkan password">
        <input type="submit" name="submit" value="Sign Up" class="form-btn">
-       <p>tidak punya akun? <a href="register_form.php">sign up</a></p>
     </form>
  
  </div>

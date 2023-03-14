@@ -59,16 +59,16 @@
         <div class="info">
             <div>
                 <h2>Informasi Pribadi</h2>
-                <p><span>Nama:</span> John Doe</p>
-                <p><span>Tanggal Lahir:</span> 1 Januari 1990</p>
-                <p><span>Alamat:</span> Jalan Raya 123, Jakarta</p>
-                <p><span>No. Telepon:</span> 081234567890</p>
+                <p><span>Nama:</span> Herliana Nur Ekawati</p>
+                <p><span>Tanggal Lahir:</span> 19 Agustus 2002</p>
+                <p><span>Alamat:</span> Graha Indah, Balikpapan</p>
+                <p><span>No. Telepon:</span> 0895705054048</p>
             </div>
             <div>
                 <h2>Informasi Akun</h2>
-                <p><span>Email:</span> johndoe@example.com</p>
-                <p><span>Username:</span> johndoe123</p>
-                <p><span>Tanggal Bergabung:</span> 1 Januari 2020</p>
+                <p><span>Email:</span> herliananur19@gmail.com</p>
+                <p><span>Username:</span> herliananur</p>
+                <p><span>Tanggal Bergabung:</span> 12 Maret 2023</p>
             </div>
         </div>
     </div>

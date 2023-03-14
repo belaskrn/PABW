@@ -33,3 +33,8 @@ Route::get('/login',function () {
 Route::get('/profileuser',function () {
     return view('profileuser');
 });
+
+Route::get('/homepage',function () {
+    return view('homepage');
+});
+

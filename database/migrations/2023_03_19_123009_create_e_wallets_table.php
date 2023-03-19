@@ -11,12 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('customer', function (Blueprint $table) {
-            $table->id("user_id");
-            $table->string("nama");
-            $table->string("username") -> unique();
-            $table->string("password");
-            $table->integer("no_hp");
+        Schema::create('e_wallets', function (Blueprint $table) {
+            $table->id();
             $table->timestamps();
         });
     }
@@ -26,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('customer');
+        Schema::dropIfExists('e_wallets');
     }
 };

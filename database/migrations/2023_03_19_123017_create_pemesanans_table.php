@@ -11,14 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('flight', function (Blueprint $table) {
+        Schema::create('pemesanans', function (Blueprint $table) {
             $table->id();
-            $table->string('flight_number');
-            $table->string('departure');
-            $table->string('arrival');
-            $table->string('departure_time');
-            $table->string('arrival_time'); 
-            $table->string('class');
             $table->timestamps();
         });
     }
@@ -28,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('flight');
+        Schema::dropIfExists('pemesanans');
     }
 };

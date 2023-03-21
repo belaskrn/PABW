@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    ## CSS
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/homepage.css">
@@ -19,7 +17,7 @@
           <img src="img/TicketIn.png" alt="TicketIn" width="120" height="26">
         </a>
 
-        <button class="btn btn-outline-success btn-rounded-white" type="submit">Masuk/Register</button>
+        <button class="btn btn-outline-success btn-rounded-white" type="submit">Masuk</button>
 
       </div>
     </nav>
@@ -139,14 +137,39 @@
 
     </section>
 
-    <section class="about">
+    <!-- <section class="about">
 
       <figure class="quote text-center fw-bold">
         <blockquote class="blockquote">
           <p class="p-5" style="font-size: 2rem;">About Us</p>
         </blockquote>
       </figure>
+      
+    </section> -->
+
+    <section class='flight-lists pt-3'>
+
+    <div class="container">
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+
+    </div>
     </section>
+
 
   </body>
 

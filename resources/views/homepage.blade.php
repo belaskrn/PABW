@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" type="text/css" href="/css/homepage.css">
 
     <!-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) -->
@@ -37,11 +38,17 @@
         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
   
           <li class="nav-item">
-            <a class="nav-link active" id="pesawat-tab" data-toggle="tab" href="#pesawat" role="tab" aria-controls="pesawat" aria-selected="true">Pesawat</a>
+            <a class="nav-link active" id="pesawat-tab" data-toggle="tab" href="#pesawat" role="tab" aria-controls="pesawat" aria-selected="true">
+            <i class="uil uil-plane-departure fs-2"></i>
+            Pesawat
+          </a>
           </li>
   
           <li class="nav-item">
-            <a class="nav-link" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="false">Hotel</a>
+            <a class="nav-link" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="false">
+            <i class="uil uil-building fs-2"></i>
+            Hotel
+          </a>
           </li>
   
         </ul>

@@ -49,8 +49,8 @@ Route::get('/homepage',function () {
     return view('homepage');
 });
 
-Route::get('/home',function () {
-    return view('home');
+Route::get('/pesan',function () {
+    return view('pesan');
 });
 
 //ini buat nampilin user ke page admin

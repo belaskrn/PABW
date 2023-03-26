@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use app\Http\Controllers\CustomAuthController;
+use Illuminate\Support\Facades\DB;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +16,10 @@ use app\Http\Controllers\CustomAuthController;
 */
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/admin', function () {
+    return view('admin');
 });
 
 Route::get('/dashbord', function () {
@@ -46,5 +52,8 @@ Route::get('/homepage',function () {
 Route::get('/home',function () {
     return view('home');
 });
+
+//ini buat nampilin user ke page admin
+Route::get('userview','App\Http\Controllers\userviewcontroller@index');
 
 

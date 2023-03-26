@@ -22,7 +22,8 @@ class CustomAuthController extends Controller
         $request->validate([
             'name' => 'required',
             'username' => 'required',
-            'email' => 'required|email|unique:user',
+            'email' => 'required|email|unique:users',
+            // 'role' => 'required',
             'password' => 'required|min:8|max:12'
 
         ]);
@@ -30,6 +31,7 @@ class CustomAuthController extends Controller
         $user -> name = $request->name;
         $user -> username = $request->username;
         $user -> email= $request->email;
+        // $user -> role= $request->role;
         $user -> password = Hash::make($request->password);
         $res = $user ->save();
         if($res){
@@ -43,7 +45,7 @@ class CustomAuthController extends Controller
     public function loginUser(Request $request)
     {
         $request->validate([
-            'email' => 'required|email|unique:user',
+            'email' => 'required|email|unique:users',
             'password' => 'required|min:8|max:12'
 
         ]); 
@@ -60,5 +62,11 @@ class CustomAuthController extends Controller
             return back()->with('gagal','email tidak ada');
         }
     }
+
+    public function dashbord(){
+        return view("dashbord");
+    }
+
+
 
 }

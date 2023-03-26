@@ -18,7 +18,7 @@
           <img src="img/TicketIn.png" alt="TicketIn" width="120" height="26">
         </a>
 
-        <button class="btn btn-outline-success btn-rounded-white" type="submit">Masuk</button>
+        <a  href="{{ url('/login') }}"><button class="btn btn-outline-success btn-rounded-white" type="submit">Masuk</button></a>
 
       </div>
     </nav>

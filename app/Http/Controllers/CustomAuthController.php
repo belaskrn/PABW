@@ -23,7 +23,6 @@ class CustomAuthController extends Controller
             'name' => 'required',
             'username' => 'required',
             'email' => 'required|email|unique:users',
-            // 'role' => 'required',
             'password' => 'required|min:8|max:12'
 
         ]);
@@ -31,7 +30,6 @@ class CustomAuthController extends Controller
         $user -> name = $request->name;
         $user -> username = $request->username;
         $user -> email= $request->email;
-        // $user -> role= $request->role;
         $user -> password = Hash::make($request->password);
         $res = $user ->save();
         if($res){
@@ -54,7 +52,7 @@ class CustomAuthController extends Controller
         if($user){
             if(Hash::check($request->password,$user->password)){
                 $request->session()->put('loginId',$user->id);
-                return redirect("dashbord");
+                return redirect("homepage");
             }  else{
                 return back()->with('gagal','password salah ');
             }
@@ -63,8 +61,8 @@ class CustomAuthController extends Controller
         }
     }
 
-    public function dashbord(){
-        return view("dashbord");
+    public function homepage(){
+        return view("homepage");
     }
 
 

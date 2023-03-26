@@ -24,12 +24,13 @@ Route::get('/profileuser',function () {
     return view('profileuser');
 });
 
+Route::get('/dashbord','App\Http\Controllers\CustomAuthController@dashbord');
 Route::get('/login', 'App\Http\Controllers\CustomAuthController@login');
 Route::get('/registration', 'App\Http\Controllers\CustomAuthController@registration');
 
 Route::post('/register-user','App\Http\Controllers\CustomAuthController@registerUser') -> name('register-user');
 
-Route::post('login-user','App\Http\Controllers\CustomAuthController@loginUser')-> name('login-user');
+Route::post('/login-user','App\Http\Controllers\CustomAuthController@loginUser')-> name('login-user');
 
 Route::get('/login',function () {
     return view('login');

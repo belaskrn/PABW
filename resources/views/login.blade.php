@@ -5,7 +5,6 @@
 <body>
    
 <div class="form-container">
-
    <form action="{{ route('login-user') }}" method="POST">
       @if(Session::has('sukses')):
       <div class="alert alert success">{{ Session::get('sukses') }}</div>
@@ -20,7 +19,6 @@
       <input type="submit" name="submit" value="login now" class="form-btn">
       <p>Daftar Akun ke Nomor Berikut <a href="https://wa.me/+6283152582912">083152582912</a></p>
    </form>
-
 </div>
 
 </body>

@@ -97,7 +97,7 @@
             
               <div class="form-row">
                 <div class="form-group col mt-3">
-                  <input class="btn btn-primary" type="submit" name="submit" id="flightsButton" value="Cari Tiket">
+                  <input class="btn btn-primary rounded-pill" type="submit" name="submit" id="flightsButton" value="Cari Tiket">
                 </div>
               </div>
             </form>          
@@ -156,21 +156,75 @@
 
     <div class="container">
 
-      <div class="card mb-3">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Button</a>
-        </div>
-      </div>
+    <div class="card mb-3 shadow">
+          <div class="card-body">
 
-      <div class="card mb-3">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Button</a>
+            <div class="row align-items-center mb-3">
+
+              <div class="col">
+                <h5 class="card-title">Nama Maskapai</h5>
+              </div>
+
+              <div class="col text-end fs-5">
+                IDR 1.200.000
+              </div>
+
+            </div>
+
+            <div class= "row align-items-center mt-3 fs-5">
+              <p class="card-text col">Waktu Keberangkatan</p>
+              <p class="card-text col">Waktu Kedatangan</p>
+              <p class="card-text col">2j 10m</p>
+            </div>
+            <div class= "row align-items-center">
+              <p class="card-text col">BPN</p>
+              <p class="card-text col">CGK</p>
+              <p class="card-text col">Durasi</p>
+            </div>
+
+            <div class= "row">
+              <div class= "col text-end">
+                <a href="#" class="btn btn-primary rounded-pill">Pesan Sekarang</a>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
+
+      <div class="card mb-3 shadow">
+          <div class="card-body">
+
+            <div class="row align-items-center mb-3">
+
+              <div class="col">
+                <h5 class="card-title">Nama Maskapai</h5>
+              </div>
+
+              <div class="col text-end fs-5">
+                IDR 1.200.000
+              </div>
+
+            </div>
+
+            <div class= "row align-items-center mt-3 fs-5">
+              <p class="card-text col">Waktu Keberangkatan</p>
+              <p class="card-text col">Waktu Kedatangan</p>
+              <p class="card-text col">2j 10m</p>
+            </div>
+            <div class= "row align-items-center">
+              <p class="card-text col">BPN</p>
+              <p class="card-text col">CGK</p>
+              <p class="card-text col">Durasi</p>
+            </div>
+
+            <div class= "row">
+              <div class= "col text-end">
+                <a href="#" class="btn btn-primary rounded-pill">Pesan Sekarang</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
 
     </div>
     </section>

@@ -53,6 +53,14 @@ Route::get('/pesan',function () {
     return view('pesan');
 });
 
+Route::get('/adminpage',function () {
+    return view('adminpage');
+});
+
+Route::get('/ticket',function () {
+    return view('ticket');
+});
+
 //ini buat nampilin user ke page admin
 Route::get('userview','App\Http\Controllers\userviewcontroller@index');
 

@@ -12,13 +12,13 @@ use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends BaseController
 {
-    public function register(Request $request): JsonResponse
+    public function register(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             'email' => 'required|email',
             'password' => 'required',
-            'c_password' => 'required|same:password',
+
         ]);
    
         if($validator->fails()){
@@ -31,7 +31,8 @@ class RegisterController extends BaseController
         $success['token'] =  $user->createToken('MyApp')->plainTextToken;
         $success['name'] =  $user->name;
    
-        return $this->sendResponse($success, 'User register successfully.');
+        //return $this->sendResponse($success, 'User register successfully.');
+        return view("login");
     }
    
     /**
@@ -39,14 +40,15 @@ class RegisterController extends BaseController
      *
      * @return \Illuminate\Http\Response
      */
-    public function login(Request $request): JsonResponse
+    public function login(Request $request)
     {
         if(Auth::attempt(['email' => $request->email, 'password' => $request->password])){ 
             $user = Auth::user(); 
             $success['token'] =  $user->createToken('MyApp')->plainTextToken; 
             $success['name'] =  $user->name;
    
-            return $this->sendResponse($success, 'User login successfully.');
+            //return $this->sendResponse($success, 'User login successfully.');
+            return view('homepage');
         } 
         else{ 
             return $this->sendError('Unauthorised.', ['error'=>'Unauthorised']);

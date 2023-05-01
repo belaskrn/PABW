@@ -16,14 +16,8 @@
         @csrf
        <h3>Sign Up</h3>
        <input type="name" name="name" required placeholder="Masukkan name">
-       <input type="username" name="username" required placeholder="Masukkan username">
        <input type="email" name="email" required placeholder="Masukkan email">
-       {{-- <label for="role">pilih role:</label>
-         <select type ="role" name="role">
-            <option value="user">user</option>
-            <option value="mitra">mitra</option>
-            <option value="admin">admin</option>
-         </select> --}}
+
        <input type="password" name="password" required placeholder="Masukkan password">
        <input type="submit" name="submit" value="Sign Up" class="form-btn">
     </form>

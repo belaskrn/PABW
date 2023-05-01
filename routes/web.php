@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use app\Http\Controllers\CustomAuthController;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\API\RegisterController;
+use App\Http\Controllers\API\BaseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,9 +39,9 @@ Route::get('/dashbord','App\Http\Controllers\CustomAuthController@dashbord');
 Route::get('/login', 'App\Http\Controllers\CustomAuthController@login');
 Route::get('/registration', 'App\Http\Controllers\CustomAuthController@registration');
 
-Route::post('/register-user','App\Http\Controllers\CustomAuthController@registerUser') -> name('register-user');
+Route::post('/register-user','App\Http\Controllers\CustomAuthController@registerUser') -> name('registrasi-user');
 
-Route::post('/login-user','App\Http\Controllers\CustomAuthController@loginUser')-> name('login-user');
+Route::post('/login-user','App\Http\Controllers\CustomAuthController@loginUser')-> name('loginuser');
 
 Route::get('/login',function () {
     return view('login');
@@ -67,4 +69,7 @@ Route::get('/ticket',function () {
 //ini buat nampilin user ke page admin
 Route::get('userview','App\Http\Controllers\userviewcontroller@index');
 
+
+Route::post('loginuser', [RegisterController::class, 'login']) -> name ('login-user');
+Route::post('registeruser', [RegisterController::class, 'register']) -> name ('register-user');
 

@@ -52,23 +52,20 @@
                     </div>
                 </div>
                 <div class="col-7">
-                    <p class="text-start">(Kota 1 -> Kota2)</p>
                     <div class="card">
                         <div class="card-body">
-                        <b class="card-title">Purchase Status</b>
-                        <p class="card-text">Purchased On</p>
-                        <p class="card-text">Day, 00 Month Years</p>
+                        <b class="card-title">Informasi Saldo</b>
+                        <div class="card">
+                        <div class="card-body">
+                        <b class="card-title">Saldo Anda</b>
+                        <p class="card-text">Rp XXX.XXX</p>
                         </div>
+                    </div>
+                        </div>
+                        
                     </div>
                     
-                    <div class="card">
-                        <div class="card-body">
-                        <b class="card-title">Detail Purchase</b>
-                        <p class="card-text">City -> City Hotel</p>
-                        <p class="card-text">Date and Time</p>
-                        <p class="card-text">Plane/Hotel</p>
-                        </div>
-                    </div>
+                    
                     
                 </div>
             </div>

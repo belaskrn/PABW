@@ -66,6 +66,10 @@ Route::get('/ticket',function () {
     return view('ticket');
 });
 
+Route::get('/saldo',function () {
+    return view('saldo');
+});
+
 //ini buat nampilin user ke page admin
 Route::get('userview','App\Http\Controllers\userviewcontroller@index');
 

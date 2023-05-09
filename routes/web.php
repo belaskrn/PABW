@@ -1,10 +1,13 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use app\Http\Controllers\CustomAuthController;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\API\RegisterController;
+use Spatie\Permission\Models\Role;
+use Illuminate\Support\Facades\Route;
+use Spatie\Permission\Models\Permission;
 use App\Http\Controllers\API\BaseController;
+use app\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\API\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -77,3 +80,31 @@ Route::get('userview','App\Http\Controllers\userviewcontroller@index');
 Route::post('loginuser', [RegisterController::class, 'login']) -> name ('login-user');
 Route::post('registeruser', [RegisterController::class, 'register']) -> name ('register-user');
 
+
+//Role and Permission
+Route::get('give-permission-to-role', function () {
+    $role = Role::findOrFail(1); //guest
+
+    $permission1 = Permission::findOrFail(1); //buat pesanan
+    $permission2 = Permission::findOrFail(2); //lihat pesanan
+    
+
+    $role->givePermissionTo([$permission1,$permission2]);
+});
+
+//memberi role ke user
+Route::get('assign-role-to-user', function () {
+    $role = Role::findOrFail(3); //guest
+
+    $user = User::findOrFail(1); //user
+
+    $user->assignRole($role);
+
+});
+
+//middleware
+Route::group(['middleware' => ['role:admin']], function () {
+    Route::get('/adminpage', function () {
+        return view('adminpage');
+    });
+});

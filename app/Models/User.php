@@ -8,10 +8,11 @@ use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Spatie\Permission\Traits\HasRoles;
 
 class user extends Authenticatable
 {
-    use HasFactory,Notifiable,HasApiTokens;
+    use HasFactory,Notifiable,HasApiTokens, HasRoles;
 
     protected $fillable = [
         'name',
@@ -37,4 +38,6 @@ class user extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    protected $guard_name = 'web';
 }

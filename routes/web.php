@@ -8,6 +8,7 @@ use Spatie\Permission\Models\Permission;
 use App\Http\Controllers\API\BaseController;
 use app\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\API\RegisterController;
+use App\Http\Controllers\ThController;
 
 /*
 |--------------------------------------------------------------------------
@@ -108,3 +109,7 @@ Route::group(['middleware' => ['role:admin']], function () {
         return view('adminpage');
     });
 });
+
+//
+Route::resource('kamar_hotels', ThController::class);
+

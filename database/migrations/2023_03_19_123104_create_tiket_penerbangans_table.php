@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('tiket_penerbangans', function (Blueprint $table) {
             $table->id();
-            $table->string('Nama tiket');
+            $table->string('nama_tiket');
             $table->string('maskapai');
             $table->date('tanggal');
             $table->integer('harga');

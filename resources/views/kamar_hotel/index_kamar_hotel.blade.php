@@ -30,7 +30,7 @@
         @foreach ($kamar_hotels as $kamar_hotel)
         <tr>
             <td>{{ ++$i }}</td>
-            <td>{{ $kamar_hotel->nama_hotel }}</td>
+            <td>{{ $kamar_hotel->nama_kamar }}</td>
             <td>{{ $kamar_hotel->hotel }}</td>
             <td>{{ $kamar_hotel->tanggal }}</td>
             <td>{{ $kamar_hotel->harga }}</td>

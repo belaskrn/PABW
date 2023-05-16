@@ -15,8 +15,7 @@ class ThController extends Controller
 
         $kamar_hotels = kamar_hotel::latest()->paginate(5);
         return view('kamar_hotel.index_kamar_hotel',compact('kamar_hotels'))->with('i', (request()->input('page', 1) - 1) * 5);
-        //compact('kamar_hotel'))
-        //return view('kamar_hotel.index_kamar_hotel',['kamar_hotel'= $kamar_hotels])->with('i', (request()->input('page', 1) - 1) * 5);
+        
     }
 
     /**
@@ -44,9 +43,7 @@ class ThController extends Controller
             kamar_hotel::create($request->all());
        
             return redirect('/kamar_hotels')->with('success','Product created successfully.');
-            //action('RedirectController@index');
-            //route('kamar_hotel.index_kamar_hotel')
-            //->route('kamar_hotel.index_kamar_hotel')
+
         }
     }
 

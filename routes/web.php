@@ -8,6 +8,7 @@ use Spatie\Permission\Models\Permission;
 use App\Http\Controllers\API\BaseController;
 use app\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\API\RegisterController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\ThController;
 use App\Http\Controllers\PageController;
 

@@ -21,8 +21,10 @@ use App\Http\Controllers\ThController;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('homepage');
 });
+
+Route::resource("/homepage/page")
 
 Route::get('/admin', function () {
     return view('admin');

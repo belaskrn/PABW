@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <head>
    <title>login</title>
    <link href="/css/app.css" rel="stylesheet" type="text/css" >
@@ -17,9 +20,10 @@
       <input type="email" name="email" required placeholder="Masukkan email">
       <input type="password" name="password" required placeholder="Masukkan password">
       <input type="submit" name="submit" value="login now" class="form-btn">
-      <p>Daftar Akun ke Nomor Berikut <a href="https://wa.me/+6283152582912">083152582912</a></p>
+      <!-- <p>Daftar Akun ke Nomor Berikut <a href="https://wa.me/+6283152582912">083152582912</a></p> -->
    </form>
 </div>
 
 </body>
 </html>
+@endsection

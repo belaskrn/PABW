@@ -1,6 +1,3 @@
-@extends('layouts.app')
-
-@section('content')
 <head>
    <title>login</title>
    <link href="/css/app.css" rel="stylesheet" type="text/css" >
@@ -26,4 +23,3 @@
 
 </body>
 </html>
-@endsection

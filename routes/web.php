@@ -8,6 +8,7 @@ use Spatie\Permission\Models\Permission;
 use App\Http\Controllers\API\BaseController;
 use app\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\API\RegisterController;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,10 +21,10 @@ use App\Http\Controllers\API\RegisterController;
 |
 */
 Route::get('/', function () {
-    return view('homepage');
+    return view('login');
 });
 
-Route::resource("/homepage/page")
+Route::resource("/homepage/page", PageController::class);
 
 Route::get('/admin', function () {
     return view('admin');

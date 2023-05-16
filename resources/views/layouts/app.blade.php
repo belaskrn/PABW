@@ -23,8 +23,10 @@
             <img src="img/TicketIn.png" alt="TicketIn" width="120" height="26">
             </a>
 
+            @guest
             <a role="button" href="{{ url('/login') }}"><button class="btn btn-outline-success btn-rounded-white" type="submit">Masuk</button></a>
-
+            @endif
+            
         </div>
     </nav>
 </head>

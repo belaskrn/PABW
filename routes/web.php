@@ -10,7 +10,6 @@ use app\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\API\RegisterController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ThController;
-use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -103,12 +102,12 @@ Route::get('assign-role-to-user', function () {
 
 });
 
-//middleware
-Route::group(['middleware' => ['role:admin']], function () {
-    Route::get('/adminpage', function () {
-        return view('adminpage');
-    });
-});
+// //middleware
+// Route::group(['middleware' => ['role:admin']], function () {
+//     Route::get('/adminpage', function () {
+//         return view('adminpage');
+//     });
+// });
 
 //
 Route::resource('kamar_hotels', ThController::class);

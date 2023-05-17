@@ -1,8 +1,22 @@
 <head>
    <title>login</title>
-   <link href="/css/login.css" rel="stylesheet" type="text/css" >
-
+   
+   <link href="\css\login.css" rel="stylesheet" type="text/css" >
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+   <style>
+    .btn{
+        background-color: blue;
+        color: #ffffff;
+        border: none;
+    }
+    .btn:hover{
+        background-color: teal;
+        color: #ffffff;
+        border: none;
+    }
+   </style>
+
 </head>
 <body>
 
@@ -48,9 +62,9 @@
             </div>
 
             <div class="text-center text-lg-start mt-4 pt-2">
-              <button type="submit" class="btn btn-primary btn-lg"
+              <button type="submit" class="btn btn-lg"
                 style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/registration"
                   class="link-danger">Register</a></p>
             </div>
 

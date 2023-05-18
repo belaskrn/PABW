@@ -70,6 +70,12 @@ Route::get('/saldo',function () {
     return view('saldo');
 });
 
+Route::get('/registrasi',function () {
+    return view('registration');
+});
+
+
+
 //ini buat nampilin user ke page admin
 Route::get('userview','App\Http\Controllers\userviewcontroller@index');
 

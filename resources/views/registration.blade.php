@@ -1,6 +1,4 @@
-@extends('auth.layout')
-
-<head>
+S<head>
     <title>register</title>
     <link href="/css/app.css" rel="stylesheet" type="text/css" >
  </head>

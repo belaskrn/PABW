@@ -42,18 +42,18 @@
 
                <form class="mx-1 mx-md-4" action="{{ route('register-user') }}" method="POST">
                   
-                     @if(Session::has('sukses')):
-                     <div class="alert alert success">{{ Session::get('sukses') }}</div>
-                     @endif
-                     @if(Session::has('gagal')):
-                     <div class="alert alert danger">{{ Session::get('gagal') }}</div>
-                     @endif
-                     @csrf
+                  @if(Session::has('sukses')):
+                  <div class="alert alert success">{{ Session::get('sukses') }}</div>
+                  @endif
+                  @if(Session::has('gagal')):
+                  <div class="alert alert danger">{{ Session::get('gagal') }}</div>
+                  @endif
+                  @csrf
 
                  <div class="d-flex flex-row align-items-center mb-4">
                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                    <div class="form-outline flex-fill mb-0">
-                     <input type="name" required class="form-control" />
+                     <input type="name" name="name" required class="form-control" />
                      <label class="form-label" >Your Name</label>
                    </div>
                  </div>
@@ -61,7 +61,7 @@
                  <div class="d-flex flex-row align-items-center mb-4">
                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                    <div class="form-outline flex-fill mb-0">
-                     <input type="email" required class="form-control" />
+                     <input type="email" name="email" required class="form-control" />
                      <label class="form-label">Your Email</label>
                    </div>
                  </div>
@@ -69,7 +69,7 @@
                  <div class="d-flex flex-row align-items-center mb-4">
                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                    <div class="form-outline flex-fill mb-0">
-                     <input type="password"  required class="form-control" />
+                     <input type="password" name="password" type="password" required class="form-control" />
                      <label class="form-label" >Password</label>
                    </div>
                  </div>

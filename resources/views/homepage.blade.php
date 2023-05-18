@@ -60,40 +60,11 @@
             <h3 class="lab mt-3">Penerbangan</h3>
   
             <form class="d-flex flex-column align-items-center">
-              <div class="form-row row">
-                <div class="col">
-                  <label for="dest">Asal:</label>
-                  <select name="asal" class="form-control" id="dest">
-                    <option value="Asal">Asal</option>
-                    <option value="Balikpapan">Balikpapan</option>
-                    <option value="Jakarta">Jakarta</option>
-                    <option value="Bandung">Bandung</option>
-                    <option value="Surabaya">Surabaya</option>
-                  </select>
-                </div>
-                <div class="col">
-                  <label for="tuju">Tujuan:</label>
-                  <select name="tujuan" class="form-control" id="tuju">
-                    <option value="tujuan">Tujuan</option>
-                    <option value="Balikpapan">Balikpapan</option>
-                    <option value="Jakarta">Jakarta</option>
-                    <option value="Bandung">Bandung</option>
-                    <option value="Surabaya">Surabaya</option>
-                  </select>
-                </div>
+              
                 <div class="col">
                   <label for="tanggal">Tanggal Pergi:</label>
                   <input type="date" name="tanggal" class="form-control" id="tanggal">
                 </div>
-                <div class="col">
-                  <label for="kelas">Kelas Kabin:</label>
-                  <select name="kelas" class="form-control" id="kelas">
-                    <option value="Semua">Semua</option>
-                    <option value="Ekonomi">Ekonomi</option>
-                    <option value="Bisnis">Bisnis</option>
-                  </select>
-                </div>
-              </div>
             
               <div class="form-row">
                 <div class="form-group col mt-3">

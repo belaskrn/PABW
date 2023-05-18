@@ -1,15 +1,34 @@
 <head>
    <title>login</title>
-   <link href="/css/login.css" rel="stylesheet" type="text/css" >
 
+   <!-- css --> 
+   <link href="/css/login.css" rel="stylesheet" type="text/css" >
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!-- style -->
+  <style>
+    .btn {
+      background-color: #44318d;
+      color: white;
+    }
+
+    .btn:hover {
+      background-color: #34235B;
+      color: white;
+    }
+
+    .form-check-input:checked {
+      background-color: #44318d;
+    }
+  </style>
+
 </head>
 <body>
   <section class="vh-100">
     <div class="container-fluid h-custom">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-9 col-lg-6 col-xl-5">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          <img src="img/welcome.png"
             class="img-fluid" alt="Sample image">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">

@@ -111,4 +111,3 @@ Route::get('assign-role-to-user', function () {
 
 //
 Route::resource('kamar_hotels', ThController::class);
-
